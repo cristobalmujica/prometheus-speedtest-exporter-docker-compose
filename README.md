@@ -1,4 +1,4 @@
-# Speedtest.net exporter for Prometheus
+# Speedtest.net exporter for Prometheus with Grafana
 Speedtest.net offcial cli app - Prometheus Exporter
 
 This is a small exporter built to allow Prometheus to scrape internet speedtests done with the official cli app from speedtest.net.
@@ -10,6 +10,7 @@ There are other exporters out there but they use a community done speedtest clie
 ```
 docker-compose up -d --build
 ```
+Open your web browser http://<<you-io o dns>>:3001 to view the dashboard grafana
 
 
 ## Environment
