@@ -33,7 +33,7 @@ scrape_configs:
 
 Import JSON Dashboard
 
-'''
+```
 {
   "annotations": {
     "list": [
@@ -478,8 +478,8 @@ Import JSON Dashboard
   "weekStart": ""
 }
 
-'''
+```
 
-My grafana dashboard is available [here](https://grafana.com/grafana/dashboards/11988/)
+Orginal grafana dashboard is available [here](https://grafana.com/grafana/dashboards/11988/) (parcial work)
 
 Or the speedtest-exporter.json present in this repo can be used instead.
