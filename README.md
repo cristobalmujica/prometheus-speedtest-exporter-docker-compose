@@ -15,15 +15,16 @@ There are other exporters out there but they use a community done speedtest clie
 
 * Add relevant config to prometheus.yml. Example:
 ```
+scrape_configs:
   - job_name: 'Speedtest'
-    scrape_interval: 30m
+    scrape_interval: 5m
     scrape_timeout: 1m
-    metrics_path: /probe
+    metrics_path: /metrics
     params:
       script: [speedtest]
     static_configs:
       - targets:
-        - 192.168.1.2:9469
+        - speedtest-exporter:9469
 ```
 
 * Restart Prometheus to reload new config
