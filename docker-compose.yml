@@ -2,9 +2,11 @@ version: '3.8'
 
 services:
   speedtest-exporter:
-    image: prometheus-speedtest-exporter:latest
+#    image: prometheus-speedtest-exporter:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: speedtest-exporter
-#    hostname: speedtest-exporter
     restart: unless-stopped
     hostname: prometheus-speedtest
     ports:
@@ -12,7 +14,6 @@ services:
   prometheus:
     image: prom/prometheus:v2.36.2
     container_name: prometheus
-#    hostname: prometheus
     restart: unless-stopped
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
