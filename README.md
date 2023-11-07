@@ -5,6 +5,13 @@ This is a small exporter built to allow Prometheus to scrape internet speedtests
 
 There are other exporters out there but they use a community done speedtest client that doesn't give accurate results
 
+## Quit RUN
+
+```
+docker-compose up -d --build
+```
+
+
 ## Environment
 
 
